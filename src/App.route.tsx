@@ -14,7 +14,7 @@ function AppRoute(): JSX.Element {
 
   useEffect(() => {
     getVersion();
-  }, []);
+  }, [getVersion]);
 
   return version.applicationVersion ? (
     <BrowserRouter basename={version.contextPath}>
