@@ -9,7 +9,7 @@ function TodoInsert(): JSX.Element {
     useAddTodoHandler.onSuccess(() => {
       console.log('success');
     });
-  });
+  }, [useAddTodoHandler]);
 
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
